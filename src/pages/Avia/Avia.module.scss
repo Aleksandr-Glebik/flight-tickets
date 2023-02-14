@@ -1,3 +1,27 @@
-.red {
-    color: red;
+@import '../../scss/_variables.scss';
+
+.container {
+    width: 963px;
+    height: 186px;
+    margin: 68px auto;
+
+    .formContent {
+        border-radius: 15px 15px 0px 0px;
+        background-color: $blue;
+        height: 100px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .formAction {
+        box-shadow: 0px 0px 14px rgba(112, 121, 153, 0.3);
+        border-radius: 0px 0px 15px 15px;
+        height: 86px;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
 }

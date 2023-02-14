@@ -1,0 +1,32 @@
+@import '../../scss/_variables.scss';
+
+input[type="text"] {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: $grey;
+    &::placeholder {
+        color: $grey;
+    }
+
+    &:focus {
+        color: $greyDark;
+        border: 1px solid $grey;
+        border-radius: 10px;
+        &::placeholder {
+            color: $greyDark;
+        }
+    }
+
+  }
+
+.input {
+    outline: none;
+    border: none;
+
+    width: 208px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 12px;
+}
