@@ -5,6 +5,7 @@ import style from './Avia.module.scss'
 import Input from '../../components/Input'
 import {getDate} from '../../utils/getDate'
 import { checkForLength } from '../../utils/checkForLength'
+import { setDataToLC } from '../../utils/setDataToLC'
 import Button from '../../components/Button'
 
 const Avia: React.FC = () => {
@@ -12,7 +13,6 @@ const Avia: React.FC = () => {
   const [arrivCity, setArrivCity] = useState('')
   const [isDisabled, setIsDisabled] = useState(true)
   const [roundTripFlight, setRoundTripFlight] = useState(false)
-  console.log('roundTripFlight', roundTripFlight);
 
   useEffect( () => {
     let dateNow = getDate()
@@ -49,6 +49,19 @@ const Avia: React.FC = () => {
     }
 
   }, [departCity, arrivCity, dateToGoCity, dateOfReturnTrip])
+
+  const handlerClickBtn = () => {
+    console.log('handlerClickBtn');
+
+    const objData = {
+      departCity,
+      arrivCity,
+      dateToGoCity,
+      dateOfReturnTrip,
+      roundTripFlight
+    }
+    setDataToLC(objData)
+  }
 
   return (
     <div className="wrapper">
@@ -92,6 +105,7 @@ const Avia: React.FC = () => {
             <Button
               className='button__disabled'
               isDisabled={isDisabled}
+              onClick={handlerClickBtn}
               >
               Найти билеты
             </Button>
