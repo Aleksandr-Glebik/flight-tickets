@@ -1,4 +1,4 @@
-type dataType = {
+export type dataType = {
     departCity: string
     arrivCity: string
     dateToGoCity: string

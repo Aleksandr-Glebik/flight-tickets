@@ -1,3 +1,152 @@
-.green {
-    color: green;
+@import '../../scss/_variables.scss';
+
+.container {
+   width: 980px;
+   margin: 71px auto;
+   background: $white;
+   box-shadow: 0px 0px 14px rgba(112, 121, 153, 0.3);
+   border-radius: 15px;
+
+   display: flex;
+   justify-content: space-between;
+
+   .price {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: $black;
+
+    border-left: 1px solid $blueLine;
+    padding: 80px 30px 80px 48px;
+   }
+
+   .item {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      &:nth-child(2) {
+        border-top: 1px dashed $blueLine;
+      }
+
+    &__imgBlock {
+        width: 132px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-right: 24px;
+
+        &_text {
+            background-color: $blueLight;
+            border-radius: 15px 0px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 14px;
+            color: $white;
+            padding: 6px 24px;
+        }
+
+        &_img {
+            margin-top: 28px;
+            margin-bottom: 10px;
+        }
+
+        &_title {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            color: $greyDark;
+        }
+    }
+
+    &__infoBlock {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        &_content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 40px;
+
+            &_textBlock {
+                margin-right: 32px;
+
+                &_time {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 28px;
+                    color: $black;
+                    margin-bottom: 10px;
+                }
+
+                &_city {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: $greyDark;
+                }
+
+                &_date {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: $greyDark;
+                }
+            }
+
+            &_imgPath {
+                margin-right: 28px;
+                margin-top: -7px;
+            }
+
+            &_imgLuggages {
+                margin-left: 32px;
+                margin-top: -40px;
+            }
+        }
+
+        &_btn {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 28px;
+            margin-bottom: 20px;
+            gap: 35px;
+
+            &_button {
+                background: inherit;
+                border: none;
+                cursor: pointer;
+
+                border: 1px solid $grey;
+                border-radius: 10px;
+                padding: 7px;
+                transition: all ease-in-out 0.35s;
+
+                &:active {
+                    background: $grey;
+                    padding: 10px 15px;
+                    border: none;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 21px;
+                }
+            }
+        }
+    }
+   }
+
+
+
 }
