@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './Input.module.scss'
 
 type InputPropsType = {
+    title: string
     type: string
     value: string
     name: string
@@ -9,18 +10,23 @@ type InputPropsType = {
     onChangeHandler: (str: string) => void
 }
 
-const Input: React.FC<InputPropsType> = ({type, value, name, onChangeHandler, placeholder}) => {
+const Input: React.FC<InputPropsType> = ({title, type, value, name, onChangeHandler, placeholder}) => {
+  console.log('title', title);
   console.log('value', value);
+  console.log('type ', typeof value);
 
   return (
-    <input
-      type={type}
-      value={value}
-      name={name}
-      onChange={(e) => onChangeHandler(e.target.value)}
-      placeholder={placeholder}
-      className={styles.input}
-    />
+    <div className={styles.container}>
+      <label className={styles.title}>{title}</label>
+      <input
+        type={type}
+        value={value}
+        name={name}
+        onChange={(e) => onChangeHandler(e.target.value)}
+        placeholder={placeholder}
+        className={styles.input}
+      />
+    </div>
   )
 }
 
