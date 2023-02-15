@@ -1,0 +1,36 @@
+@import '../../scss/_variables.scss';
+
+.btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+
+  width: 158px;
+  height: 40px;
+  border-radius: 10px;
+  background: $blue;
+  text-align: center;
+  color: $white;
+  margin-right: 29px;
+  transition: all ease-in-out 0.35s;
+
+  &:active {
+    background: $blueDark;
+  }
+
+  &__disabled {
+    background: $grey;
+    cursor: default;
+
+    &:active {
+      background: $grey;
+    }
+  }
+}

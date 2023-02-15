@@ -1,11 +1,8 @@
 @import '../../scss/_variables.scss';
 
-input[type="text"],input[type="date"] {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
+input[type="text"], input[type="date"] {
     color: $grey;
+
     &::placeholder {
         color: $grey;
     }
@@ -13,14 +10,18 @@ input[type="text"],input[type="date"] {
     &:focus {
         color: $greyDark;
         border: 1px solid $blue;
-        border-radius: 10px;
+
         &::placeholder {
             color: $greyDark;
         }
     }
 
-  }
+}
 
+input[type="date"] {
+    cursor: pointer;
+}
+    
 .container {
     display: flex;
     flex-direction: column;
@@ -33,14 +34,20 @@ input[type="text"],input[type="date"] {
         line-height: 13px;
         color: $white;
     }
-}
 
-.input {
-    outline: none;
-    border: none;
+    .input {
+        outline: none;
+        border: none;
 
-    width: 208px;
-    height: 40px;
-    border-radius: 10px;
-    padding: 12px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+
+        width: 208px;
+        height: 40px;
+        border-radius: 10px;
+        padding: 12px;
+        transition: all ease-in-out 0.35s;
+    }
 }
