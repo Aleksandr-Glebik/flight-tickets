@@ -11,9 +11,6 @@ type InputPropsType = {
 }
 
 const Input: React.FC<InputPropsType> = ({title, type, value, name, onChangeHandler, placeholder}) => {
-  console.log('title', title);
-  console.log('value', value);
-  console.log('type ', typeof value);
 
   return (
     <div className={styles.container}>

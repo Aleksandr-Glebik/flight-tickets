@@ -1,0 +1,101 @@
+@import '../../../scss/_variables.scss';
+
+.item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    &:nth-child(2) {
+      border-top: 1px dashed $blueLine;
+    }
+
+  &__imgBlock {
+      width: 132px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+
+      &_text {
+          background-color: $blueLight;
+          border-radius: 15px 0px;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 14px;
+          color: $white;
+          padding: 6px 24px;
+      }
+
+      &_img {
+          margin-top: 28px;
+          margin-bottom: 10px;
+      }
+
+      &_title {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 21px;
+          color: $greyDark;
+      }
+  }
+
+  &__infoBlock {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 0 20px;
+
+      &_content {
+          height: 110px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-end;
+
+          &_textBlock {
+            width: 110px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+              &_time {
+                  font-style: normal;
+                  font-weight: 700;
+                  font-size: 24px;
+                  line-height: 28px;
+                  color: $black;
+                  margin-bottom: 10px;
+              }
+
+              &_city {
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 14px;
+                  line-height: 16px;
+                  color: $greyDark;
+              }
+
+              &_date {
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 14px;
+                  line-height: 16px;
+                  color: $greyDark;
+              }
+          }
+
+          &_imgPath {
+              margin: 0 24px 25px 0;
+          }
+
+          &_imgLuggages {
+              margin-left: 25px;
+          }
+      }
+
+      &_btnContainer {
+          display: flex;
+          justify-content: flex-start;
+          margin-top: 24px;
+          margin-bottom: 30px;
+     }
+  }
+ }
