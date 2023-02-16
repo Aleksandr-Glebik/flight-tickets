@@ -1,0 +1,45 @@
+@import '../../scss/_variables.scss';
+.btn {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+.btnTicket {
+  font-size: 14px;
+  line-height: 16px;
+  border: 1px solid $blueLine;
+  border-radius: 10px;
+  padding: 6px 7px 7px 3px;
+  transition: all ease-in-out 0.35s;
+  margin-right: 20px;
+
+  &:hover {
+    background-color: $blueLine;
+  }
+  &:focus {
+    background-color: $blueLine;
+    padding: 10px 20px;
+    border: none;
+  }
+  &:active {
+    background-color: $blue;
+    padding: 10px 20px;
+    border: none;
+  }
+  &.activeBtn {
+    background-color: $blueLine;
+    padding: 10px 20px;
+    border: none;
+  }
+}
+.large {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+
+
+
+
+
