@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/flight-tickets/static/css/main.7163359b.css",
-    "main.js": "/flight-tickets/static/js/main.5751a8ee.js",
+    "main.css": "/flight-tickets/static/css/main.d9b8a2f5.css",
+    "main.js": "/flight-tickets/static/js/main.78c8804c.js",
     "index.html": "/flight-tickets/index.html",
-    "main.7163359b.css.map": "/flight-tickets/static/css/main.7163359b.css.map",
-    "main.5751a8ee.js.map": "/flight-tickets/static/js/main.5751a8ee.js.map"
+    "main.d9b8a2f5.css.map": "/flight-tickets/static/css/main.d9b8a2f5.css.map",
+    "main.78c8804c.js.map": "/flight-tickets/static/js/main.78c8804c.js.map"
   },
   "entrypoints": [
-    "static/css/main.7163359b.css",
-    "static/js/main.5751a8ee.js"
+    "static/css/main.d9b8a2f5.css",
+    "static/js/main.78c8804c.js"
   ]
 }
