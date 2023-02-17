@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "http://localhost:3000/avia/static/css/main.7163359b.css",
-    "main.js": "http://localhost:3000/avia/static/js/main.e9fdbd4b.js",
-    "index.html": "http://localhost:3000/avia/index.html",
-    "main.7163359b.css.map": "http://localhost:3000/avia/static/css/main.7163359b.css.map",
-    "main.e9fdbd4b.js.map": "http://localhost:3000/avia/static/js/main.e9fdbd4b.js.map"
+    "main.css": "/flight-tickets/static/css/main.7163359b.css",
+    "main.js": "/flight-tickets/static/js/main.b3de1daf.js",
+    "index.html": "/flight-tickets/index.html",
+    "main.7163359b.css.map": "/flight-tickets/static/css/main.7163359b.css.map",
+    "main.b3de1daf.js.map": "/flight-tickets/static/js/main.b3de1daf.js.map"
   },
   "entrypoints": [
     "static/css/main.7163359b.css",
-    "static/js/main.e9fdbd4b.js"
+    "static/js/main.b3de1daf.js"
   ]
 }
