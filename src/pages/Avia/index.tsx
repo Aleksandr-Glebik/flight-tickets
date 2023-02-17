@@ -101,7 +101,7 @@ const Avia: React.FC = () => {
           />
         </form>
         <div className={style.formAction}>
-          <Link to='/avia/info'>
+          <Link to='/info'>
             <Button
               className='button__disabled'
               isDisabled={isDisabled}

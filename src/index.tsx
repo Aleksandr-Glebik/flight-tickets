@@ -11,11 +11,11 @@ import ErrorPage from './pages/ErrorPage';
 
 const router = createBrowserRouter([
   {
-    path: "/avia",
+    path: "/",
     element: <Avia />,
   },
   {
-    path: "/avia/info",
+    path: "/info",
     element: <AviaInfo />,
   },
   {

@@ -27,7 +27,7 @@ const AviaInfo: React.FC = () => {
         </div>
       </div>
       <div className={styles.linkReturn}>
-      <Link to='/avia' >
+      <Link to='/' >
         <button className={styles.button}>
           вернуться назад
         </button>

@@ -14,7 +14,7 @@ const BtnTicket: React.FC<BtnTicketPropsType> = ({ departTime, timeOfStay, class
 
   return (
     <button
-      className={clsx(styles.btn, styles.btnTicket, className, {
+      className={clsx(styles.btn, styles.btnTicket, {
         [styles.activeBtn]: className.includes('activeBtn')
       })}
       onClick={onClick}
